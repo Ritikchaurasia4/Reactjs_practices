@@ -33,7 +33,7 @@ const App = () => {
 
   const copyPassword = useCallback(() => {
     passwordRef.current?.select();
-    passwordRef.current?.setSelectionRange(0,3);
+    passwordRef.current?.setSelectionRange(0,3);  // select only range value
     window.navigator.clipboard.writeText(password);
   }, [password])
 
